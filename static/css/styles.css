@@ -1,0 +1,72 @@
+/* static/styles.css */
+
+.content {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d0eaf7, #a3d4f1); /* Glossy gradient background */
+    margin: 1;
+    padding: 20px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+/* Heading with background image */
+.heading {
+    text-align: center;
+    background-image: url('../images/ui-bg_flat_0_003e71_40x100.png');
+    background-size: cover;
+    /* Ensure the image covers the whole area */
+    background-position: center;
+    /* Center the image */
+    color: white;
+    /* Text color to ensure readability on dark backgrounds */
+    padding: 8px 0;
+    /* Add padding to the top and bottom of the heading */
+    font-size: 2.0rem;
+    /* Font size for the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Optional: Adds shadow to make text more readable */
+    width: 102%;
+}
+
+
+
+
+label {
+    margin-bottom: 8px;
+    color: #333; /* Dark gray text color */
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border around the result */
+    border-radius: 4px;
+    background-color: #9fc3ef; /* Slightly off-white background */
+    color: #333; /* Dark gray text color */
+}
