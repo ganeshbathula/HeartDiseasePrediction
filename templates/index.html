@@ -1,0 +1,129 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-icons.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="mt-2">
+        <div class="row col-12">
+            <!-- Heading with background image -->
+            <div class="text-left">
+                <img src="{{ url_for('static', filename='images/broadridge-logo.png') }}" alt="Broadridge Logo">
+                <h2 class="heading">Heart Disease Prediction</h2>
+            </div>
+            <div class="content">
+                <form method="post">
+                    <div class="row mb-3">
+                        <div class="col-md-4 form-floating mb-4">
+                            <input type="text" name="age" class="form-control" id="age" placeholder="Age" required>
+                            <label for="age">Age</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="sex" class="form-select" id="sex" required>
+                                <option value="0">Female</option>
+                                <option value="1">Male</option>
+                            </select>
+                            <label for="sex">Sex</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="cp" class="form-select" id="cp" required>
+                                <option value="0">Typical Angina</option>
+                                <option value="1">Atypical Angina</option>
+                                <option value="2">Non-Anginal Pain</option>
+                                <option value="3">Asymptomatic</option>
+                            </select>
+                            <label for="cp">Chest Pain Type</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 form-floating mb-4">
+                            <input type="text" name="trestbps" class="form-control" id="trestbps" placeholder="Resting Blood Pressure" required>
+                            <label for="trestbps">Resting Blood Pressure (mm Hg)</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <input type="text" name="chol" class="form-control" id="chol" placeholder="Serum Cholesterol" required>
+                            <label for="chol">Serum Cholesterol (mg/dl)</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="fbs" class="form-select" id="fbs" required>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                            <label for="fbs">Fasting Blood Sugar > 120 mg/dl</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="restecg" class="form-select" id="restecg" required>
+                                <option value="0">Normal</option>
+                                <option value="1">ST-T Wave Abnormality</option>
+                                <option value="2">Left Ventricular Hypertrophy</option>
+                            </select>
+                            <label for="restecg">Resting Electrocardiographic Results</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <input type="text" name="thalach" class="form-control" id="thalach" placeholder="Maximum Heart Rate" required>
+                            <label for="thalach">Maximum Heart Rate Achieved</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="exang" class="form-select" id="exang" required>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                            <label for="exang">Exercise Induced Angina</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 form-floating mb-4">
+                            <input type="text" name="oldpeak" class="form-control" id="oldpeak" placeholder="Oldpeak" required>
+                            <label for="oldpeak">Oldpeak</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="slope" class="form-select" id="slope" required>
+                                <option value="0">Upsloping</option>
+                                <option value="1">Flat</option>
+                                <option value="2">Downsloping</option>
+                            </select>
+                            <label for="slope">Slope of the Peak Exercise ST Segment</label>
+                        </div>
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="ca" class="form-select" id="ca" required>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <label for="ca">Number of Major Vessels Colored by Fluoroscopy</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 form-floating mb-4">
+                            <select name="thal" class="form-select" id="thal" required>
+                                <option value="0">Normal</option>
+                                <option value="1">Fixed Defect</option>
+                                <option value="2">Reversible Defect</option>
+                            </select>
+                            <label for="thal">Thalassemia</label>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Predict</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

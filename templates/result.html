@@ -1,0 +1,24 @@
+<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+{% if final_result is defined %}
+<div class="result">
+    
+    {% if final_result == 0 %}
+        <h2><p>Prediction Output: No heart disease detected</p></h2>
+    {% else %}
+        <h2><p>Prediction Output: Suffering from heart disease</p></h2>
+    {% endif %}
+</div>
+
+<div>
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;"></div>
+        <img src="{{ url_for('static', filename='images/feature_importance.png') }}" alt="Feature Importance" style="max-width: 45%; height: auto; padding: 10px; margin-left: 20px;">
+        <img src="{{ url_for('static', filename='images/accuracy_plot.png') }}" alt="Accuracy Plot" style="max-width: 45%; height: auto; padding: 10px; margin-left: 20px;">
+    </div>
+
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <img src="{{ url_for('static', filename='images/prediction_distribution.png') }}" alt="Prediction Probability Distribution" style="max-width: 45%; height: auto; padding: 10px; margin-left: 20px;">
+        <img src="{{ url_for('static', filename='images/shap_summary_plot.png') }}" alt="SHAP Values Plot" style="max-width: 45%; height: auto; padding: 10px; margin-left: 20px;">
+    </div>
+</div>
+
+{% endif %}
