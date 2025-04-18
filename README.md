@@ -46,7 +46,7 @@ Follow these steps to install and set up the project directly from the GitHub re
      ```
 2. **Create a Virtual Environment** (Optional but recommended)
    
-   - **Python Version: Python 3.9.13**
+   - **Python Version: 3.9.13**
    - It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
      ```
      conda create -p <Environment_Name> python==<python version> -y
