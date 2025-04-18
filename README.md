@@ -45,18 +45,19 @@ Follow these steps to install and set up the project directly from the GitHub re
      git clone https://github.com/ganeshbathula/HeartDiseasePrediction.git
      ```
 2. **Create a Virtual Environment** (Optional but recommended)
+    **Python Version: Python 3.9.13**
    - It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
      ```
      conda create -p <Environment_Name> python==<python version> -y
      ```
 
-3. **Activate the Virtual Environment** (Optional)
+4. **Activate the Virtual Environment** (Optional)
    - Activate the virtual environment based on your operating system:
        ```
        conda activate <Environment_Name>/
        ```
 
-4. **Install Dependencies**
+5. **Install Dependencies**
    - Navigate to the project directory:
      ```
      cd [project_directory]
@@ -66,13 +67,13 @@ Follow these steps to install and set up the project directly from the GitHub re
      pip install -r requirements.txt
      ```
 
-5. **Run the Project**
+6. **Run the Project**
    - Start the project by running the appropriate command.
      ```
      python app.py
      ```
 
-6. **Access the Project**
+7. **Access the Project**
    - Open a web browser or the appropriate client to access the project.
   
 ## MLFlow steps
