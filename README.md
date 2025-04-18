@@ -74,4 +74,11 @@ Follow these steps to install and set up the project directly from the GitHub re
 
 6. **Access the Project**
    - Open a web browser or the appropriate client to access the project.
+  
+## MLFlow steps
+
+Set the path to mlflow.exe and run the below command and execute Training_pipeline.py file to see the experiment details.
+```
+mlflow server --backend-store-uri sqlite:///mlruns.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000
+```
 
