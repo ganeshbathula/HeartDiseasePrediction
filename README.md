@@ -45,7 +45,8 @@ Follow these steps to install and set up the project directly from the GitHub re
      git clone https://github.com/ganeshbathula/HeartDiseasePrediction.git
      ```
 2. **Create a Virtual Environment** (Optional but recommended)
-    **Python Version: Python 3.9.13**
+   
+   - **Python Version: Python 3.9.13**
    - It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
      ```
      conda create -p <Environment_Name> python==<python version> -y
